@@ -4,11 +4,11 @@
 PYSPARK="3.0.2"
 SPARKHOME="/content/spark-3.1.1-bin-hadoop2.7"
 
-while getopts p: option
+while getopts v: option
 do
  case "${option}"
  in
- p) PYSPARK=${OPTARG};;
+ v) PYSPARK=${OPTARG};;
  esac
 done
 
