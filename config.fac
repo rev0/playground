@@ -1,0 +1,5 @@
+Prophet Piard /TEST_DIR
+
+!2, Name, Catalog
+*, "plik1.fac", "/subfolder1/"
+*, "plik2.fac", "/subfolder2/"
