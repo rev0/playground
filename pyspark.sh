@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #default values for pyspark and SPARK_HOME
-PYSPARK="3.0.2"
+PYSPARK="3.1.1"
 SPARKHOME="/content/spark-3.1.1-bin-hadoop2.7"
 
 while getopts v: option
