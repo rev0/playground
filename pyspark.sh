@@ -39,4 +39,4 @@ export SPARK_HOME=$SPARKHOME
 export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
 
 # Install pyspark
-!pip install --upgrade -q pyspark==$PYSPARK findspark
+! pip install --upgrade -q pyspark==$PYSPARK findspark
