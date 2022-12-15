@@ -18,7 +18,7 @@ apt-get purge -y openjdk-11* -qq > /dev/null && sudo apt-get autoremove -y -qq >
 apt-get install -y openjdk-8-jdk-headless -qq > /dev/null
 
 if [[ "$PYSPARK" == "3.1"* ]]; then
-  wget -q "https://downloads.apache.org/spark/spark-3.1.3/spark-3.1.2-bin-hadoop3.2.tgz" > /dev/null
+  wget -q "https://downloads.apache.org/spark/spark-3.1.3/spark-3.1.3-bin-hadoop3.2.tgz" > /dev/null
   tar -xvf spark-3.1.2-bin-hadoop3.2.tgz > /dev/null
   SPARKHOME="/content/spark-3.1.2-bin-hadoop3.2"
 elif [[ "$PYSPARK" == "3.0"* ]]; then
@@ -30,9 +30,9 @@ elif [[ "$PYSPARK" == "2"* ]]; then
   tar -xvf spark-2.4.7-bin-hadoop2.7.tgz > /dev/null
   SPARKHOME="/content/spark-2.4.7-bin-hadoop2.7"
 else
-  wget -q "https://downloads.apache.org/spark/spark-3.1.2/spark-3.1.2-bin-hadoop3.2.tgz" > /dev/null
+  wget -q "https://downloads.apache.org/spark/spark-3.1.3/spark-3.1.3-bin-hadoop3.2.tgz" > /dev/null
   tar -xvf spark-3.1.2-bin-hadoop3.2.tgz > /dev/null
-  SPARKHOME="/content/spark-3.1.2-bin-hadoop3.2"
+  SPARKHOME="/content/spark-3.1.3-bin-hadoop3.2"
 fi
 
 export SPARK_HOME=$SPARKHOME
